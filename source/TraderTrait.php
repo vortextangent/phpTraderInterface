@@ -93,7 +93,7 @@ trait TraderTrait
     /**
      * @throws \Exception
      */
-    protected static function checkForError()
+    protected static function checkForError(): void
     {
         $errorNumber = trader_errno();
         switch ($errorNumber) {
@@ -2709,7 +2709,7 @@ trait TraderTrait
      *
      * @throws \Exception
      */
-    public static function set_compat(integer $compatId)
+    public static function set_compat(integer $compatId): void
     {
         trader_set_compat($compatId);
         static::checkForError();
@@ -2724,7 +2724,7 @@ trait TraderTrait
      *
      * @throws \Exception
      */
-    public static function set_unstable_period(integer $functionId, int $timePeriod)
+    public static function set_unstable_period(integer $functionId, int $timePeriod): void
     {
         trader_set_unstable_period($functionId, $timePeriod);
         static::checkForError();

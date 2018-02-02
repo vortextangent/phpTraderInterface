@@ -2244,7 +2244,7 @@ class Trader
      *
      * @throws \Exception
      */
-    public static function setCompatibilityMode(integer $compatId)
+    public static function setCompatibilityMode(integer $compatId): void
     {
         static::set_compat($compatId);
     }
@@ -2258,7 +2258,7 @@ class Trader
      *
      * @throws \Exception
      */
-    public static function setUnstablePeriod(integer $functionId, int $timePeriod)
+    public static function setUnstablePeriod(integer $functionId, int $timePeriod): void
     {
         static::set_unstable_period($functionId, $timePeriod);
     }
